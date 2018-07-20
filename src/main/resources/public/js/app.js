@@ -47,7 +47,7 @@
 		}).state('lego',{
 			url:'/lego',
 			templateUrl: viewsPrefix + 'lego.html',
-			controller:'ShipwreckListController'
+			controller:'LegoListController'
 	    }).state('viewLego',{
 	       url:'/lego/:id/view',
 	       templateUrl: viewsPrefix + 'lego-view.html',

@@ -1,7 +1,7 @@
 angular.module('app.controllers', []).controller('LeogListController', function($scope, $state, popupService, $window, Lego) {
   $scope.lego = Lego.query(); //fetch all shipwrecks. Issues a GET to /api/vi/lego
 
-  $scope.deleteLego = function(shipwreck) { // Delete a Lego. Issues a DELETE to /api/v1/lego/:id
+  $scope.deleteLego = function(lego) { // Delete a Lego. Issues a DELETE to /api/v1/lego/:id
     if (popupService.showPopup('Really delete this?')) {
       lego.$delete(function() {
         $scope.lego = Lego.query();

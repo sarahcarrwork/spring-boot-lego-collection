@@ -1,4 +1,4 @@
-angular.module('app.services', []).factory('Shipwreck', function($resource) {
+angular.module('app.services', []).factory('Lego', function($resource) {
   return $resource('/api/v1/lego/:id', { id: '@id' }, {
     update: {
       method: 'PUT'
