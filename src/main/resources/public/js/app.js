@@ -67,7 +67,7 @@
 			return {
 				link: function(scope, element) {
 					var listener = function(event, toState) {
-						var title = 'Project Name';
+						var title = 'Lego Collection';
 						if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle + ' - ' + title;
 						$timeout(function() {
 							element.text(title);

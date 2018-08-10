@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Lego {
 	Long id;
 	Long legoItemNumber;
@@ -7,6 +9,11 @@ public class Lego {
 	String description;
     Long pieces;
 	Integer year;
+
+	//default constructor
+	public Lego () {
+
+    }
 
     public Lego(Long id, Long legoItemNumber, String name, String description, Long pieces, Integer year) {
         this.id = id;
@@ -29,9 +36,7 @@ public class Lego {
         return legoItemNumber;
     }
 
-    public void setLegoItemNumber(Long legoItemNumber) {
-        this.legoItemNumber = legoItemNumber;
-    }
+    public void setLegoItemNumber(Long legoItemNumber) { this.legoItemNumber = legoItemNumber; }
 
     public String getName() {
         return name;
@@ -64,6 +69,4 @@ public class Lego {
     public void setYear(Integer year) {
         this.year = year;
     }
-
-
 }
